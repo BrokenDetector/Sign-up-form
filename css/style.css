@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #EAEDF0;
+    margin: 0;
+    padding: 0;
+}
+
+/*LEFT SIDE*/
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    width: 60vw;
+    min-width: 340px;
+    height: 100vh;
+    background: url(/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.img>.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    line-height: 2rem;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.h1>img {
+    width: 5rem;
+    padding: 10px;
+}
+
+.h1>h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 5vw;
+}
+
+.img>h5 {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    opacity: 0.7;
+}
+
+h5>a {
+    color: #fff;
+}
+
+/*RIGHT SIDE*/
+
+.main {
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.text {
+    font-size: 1.4rem;
+    padding: 30px;
+}
+
+.form {
+    background-color: #F6F7F8;
+    padding: 50px;
+    box-shadow: black;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 60vw;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.label {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+input {
+    padding: 5px 10px;
+    border: 1px #E5E7EB solid;
+    border-radius: 5px;
+}
+
+input:valid:focus {
+    border: 1px blue solid;
+}
+
+input:invalid:focus {
+    border: 1px red solid;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+}
+
+/*BOTTOM*/
+
+button {
+    color: #fff;
+    background-color: #596D48;
+    font-weight: bold;
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bottom {
+    margin: 50px;
+    font-weight: bold;
+}
+
+p>a {
+    color: #596D48;
+}
